@@ -16,7 +16,7 @@
 
 <div class="box-header">
   	<div class="col-md-6 mb-3">
-	{!! Form::submit('Crear Curso ', ['class' => 'btn btn-primary']) !!}
+	<a href="{{route('VistaExamenes.index')}}" class="btn btn-primary"><span aria-hidden="true"></span>Crear Evaluación</a>
   	</div>
   </div>
 </div>

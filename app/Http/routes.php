@@ -29,6 +29,25 @@ Route::resource('InscribirseCurso', 'InscribirseCurso\\InscribirseCursoControlle
 
 Route::resource('VistaAlumno', 'VistaAlumno\\VistaAlumnoController');
 
+Route::resource('VistaExamenes', 'VistaExamenes\\VistaExamenController');
+
+Route::resource('VistaSeleccionSimple', 'VistaSeleccionSimple\\VistaSeleccionSimpleController');
+
+Route::resource('VistaSeleccionMultiple', 'VistaSeleccionMultiple\\VistaSeleccionMultipleController');
+
+Route::resource('VistaFalsoVerdadero', 'VistaFalsoVerdadero\\VistaFalsoVerdaderoController');
+
+Route::resource('VistaSubirArchivo', 'VistaSubirArchivo\\VistaSubirArchivoController');
+
+Route::resource('VistaOrdenar', 'VistaOrdenar\\VistaOrdenarController');
+
+Route::resource('VistaCompletar', 'VistaCompletar\\VistaCompletarController');
+
+
+
+
+
+
 
 
 
