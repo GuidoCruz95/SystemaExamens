@@ -54,8 +54,125 @@ class EntrustSetupTables extends Migration
 
             $table->primary(['permission_id', 'role_id']);
         });
+        
+
+        Schema::create('tipo_preguntas', function (Blueprint $table) {
+            $table->increments('id');
+            $table->string('nombre');
+            $table->timestamps();
+        });
+
+        Schema::create('tipo_evaluacions', function (Blueprint $table) {
+            $table->increments('id');
+            $table->string('nombre');
+            $table->timestamps();
+        });
+
+        Schema::create('respuestas', function (Blueprint $table) {
+            $table->increments('id');
+            $table->string('nombre');
+            $table->timestamps();
+        });
+         
+        
+        Schema::create('grupos', function (Blueprint $table) {
+            $table->increments('id');
+            $table->string('nombre');
+            $table->string('descripcion');
+            $table->timestamps();
+        });
 
         
+        Schema::create('materias', function (Blueprint $table) {
+            $table->increments('id');
+            $table->string('nombre');
+            $table->string('cotrasena');
+            $table->timestamps();
+
+            $table->integer('user_id')->unsigned();
+              $table->foreign('user_id')->references('id')->on('users')
+            ->onUpdate('CASCADE')
+            ->onDelete('NO ACTION');
+
+        });
+
+        Schema::create('preguntas', function (Blueprint $table) {
+            $table->increments('id');
+            $table->string('nombre');
+            $table->integer('puntos');
+            $table->timestamps();
+
+            $table->integer('respuesta_id')->unsigned();
+              $table->foreign('respuesta_id')->references('id')->on('respuestas')
+            ->onUpdate('CASCADE')
+            ->onDelete('NO ACTION');
+            
+            $table->integer('tipo_pregunta_id')->unsigned();
+              $table->foreign('tipo_pregunta_id')->references('id')->on('tipo_preguntas')
+            ->onUpdate('CASCADE')
+            ->onDelete('NO ACTION');
+
+        });
+
+        
+        
+        Schema::create('evaluacions', function (Blueprint $table) {
+            $table->increments('id');
+            $table->string('nombre');
+            $table->timestamps();
+
+            $table->integer('user_id')->unsigned();
+              $table->foreign('user_id')->references('id')->on('users')
+            ->onUpdate('CASCADE')
+            ->onDelete('NO ACTION');
+            
+            $table->integer('materia_id')->unsigned();
+              $table->foreign('materia_id')->references('id')->on('materias')
+            ->onUpdate('CASCADE')
+            ->onDelete('NO ACTION');
+
+            $table->integer('tipo_evaluacion_id')->unsigned();
+              $table->foreign('tipo_evaluacion_id')->references('id')->on('tipo_evaluacions')
+            ->onUpdate('CASCADE')
+            ->onDelete('NO ACTION');
+
+        });
+
+        Schema::create('usuario_evaluacions', function (Blueprint $table) {
+            $table->increments('id');
+            $table->integer('nota');
+            $table->timestamps();
+
+            $table->integer('user_id')->unsigned();
+              $table->foreign('user_id')->references('id')->on('users')
+            ->onUpdate('CASCADE')
+            ->onDelete('NO ACTION');
+            
+            $table->integer('evaluacion_id')->unsigned();
+              $table->foreign('evaluacion_id')->references('id')->on('evaluacions')
+            ->onUpdate('CASCADE')
+            ->onDelete('NO ACTION');
+
+        });
+
+
+        Schema::create('documentos', function (Blueprint $table) {
+            $table->increments('id');
+            $table->string('nombre');
+            $table->timestamps();
+
+            $table->integer('user_id')->unsigned();
+              $table->foreign('user_id')->references('id')->on('users')
+            ->onUpdate('CASCADE')
+            ->onDelete('NO ACTION');
+            
+            $table->integer('evaluacion_id')->unsigned();
+              $table->foreign('evaluacion_id')->references('id')->on('evaluacions')
+            ->onUpdate('CASCADE')
+            ->onDelete('NO ACTION');
+
+        });
+             
     }
 
     /**
