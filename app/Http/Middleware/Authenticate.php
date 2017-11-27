@@ -1,6 +1,6 @@
 <?php
 
-namespace Veterinaria\Http\Middleware;
+namespace EVA\Http\Middleware;
 
 use Closure;
 use Illuminate\Contracts\Auth\Guard;

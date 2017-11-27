@@ -46,11 +46,11 @@
             
 
             <li class="treeview">
-                <a href="#"><i class='fa fa-pencil-square-o'></i> <span>Registro </span> <i class="fa fa-angle-left pull-right"></i></a>
-                <ul class="treeview-menu">
-                    <li><a href="{{url('almacenRegis/create')}}">Regis</a></li>
-                    <li><a href="{{url('almacenRegis')}}">Editar </a></li>
-                </ul>
+                <a href="{{route('CrearCurso.index')}}"><i class='fa fa-pencil-square-o'></i> <span>Crear Curso </span></a>
+            </li>
+
+            <li class="treeview">
+                <a href="{{route('InscribirseCurso.index')}}"><i class='fa fa-pencil-square-o'></i> <span>Inscribirse Curso </span></a>
             </li>
             
             <li class="treeview">

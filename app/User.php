@@ -1,6 +1,6 @@
 <?php
 
-namespace Veterinaria;
+namespace EVA;
 
 use Illuminate\Auth\Authenticatable;
 use Illuminate\Database\Eloquent\Model;
@@ -37,7 +37,7 @@ class User extends Model implements AuthenticatableContract, CanResetPasswordCon
 
      public function roles()
     {
-        return $this->belongsToMany('Veterinaria\Role', 'role_user');
+        return $this->belongsToMany('EVA\Role', 'role_user');
         
     }
 

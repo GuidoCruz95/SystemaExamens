@@ -1,6 +1,6 @@
 <?php
 
-namespace Veterinaria\Http\Middleware;
+namespace EVA\Http\Middleware;
 
 use Illuminate\Foundation\Http\Middleware\VerifyCsrfToken as BaseVerifier;
 

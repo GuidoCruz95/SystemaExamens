@@ -1,6 +1,6 @@
 <?php
 
-namespace Veterinaria\Exceptions;
+namespace EVA\Exceptions;
 
 use Exception;
 use Illuminate\Database\Eloquent\ModelNotFoundException;

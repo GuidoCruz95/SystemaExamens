@@ -1,6 +1,6 @@
 <?php
 
-namespace Veterinaria\Http;
+namespace EVA\Http;
 
 use Illuminate\Foundation\Http\Kernel as HttpKernel;
 
@@ -13,11 +13,11 @@ class Kernel extends HttpKernel
      */
     protected $middleware = [
         \Illuminate\Foundation\Http\Middleware\CheckForMaintenanceMode::class,
-        \Veterinaria\Http\Middleware\EncryptCookies::class,
+        \EVA\Http\Middleware\EncryptCookies::class,
         \Illuminate\Cookie\Middleware\AddQueuedCookiesToResponse::class,
         \Illuminate\Session\Middleware\StartSession::class,
         \Illuminate\View\Middleware\ShareErrorsFromSession::class,
-        \Veterinaria\Http\Middleware\VerifyCsrfToken::class,
+        \EVA\Http\Middleware\VerifyCsrfToken::class,
     ];
 
     /**
@@ -26,8 +26,8 @@ class Kernel extends HttpKernel
      * @var array
      */
     protected $routeMiddleware = [
-        'auth' => \Veterinaria\Http\Middleware\Authenticate::class,
+        'auth' => \EVA\Http\Middleware\Authenticate::class,
         'auth.basic' => \Illuminate\Auth\Middleware\AuthenticateWithBasicAuth::class,
-        'guest' => \Veterinaria\Http\Middleware\RedirectIfAuthenticated::class,
+        'guest' => \EVA\Http\Middleware\RedirectIfAuthenticated::class,
     ];
 }

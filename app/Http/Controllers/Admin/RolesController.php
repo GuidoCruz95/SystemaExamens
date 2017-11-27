@@ -1,16 +1,16 @@
 <?php
 
-namespace Veterinaria\Http\Controllers\Admin;
+namespace EVA\Http\Controllers\Admin;
 
-use Veterinaria\Http\Requests;
-use Veterinaria\Http\Controllers\Controller;
+use EVA\Http\Requests;
+use EVA\Http\Controllers\Controller;
 
-use Veterinaria\Role;
+use EVA\Role;
 use Illuminate\Http\Request;
 use Carbon\Carbon;
 use Session;
 
-use Veterinaria\Permission;
+use EVA\Permission;
 
 
 class RolesController extends Controller

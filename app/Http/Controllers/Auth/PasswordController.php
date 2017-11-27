@@ -1,8 +1,8 @@
 <?php
 
-namespace Veterinaria\Http\Controllers\Auth;
+namespace EVA\Http\Controllers\Auth;
 
-use Veterinaria\Http\Controllers\Controller;
+use EVA\Http\Controllers\Controller;
 use Illuminate\Foundation\Auth\ResetsPasswords;
 
 class PasswordController extends Controller
