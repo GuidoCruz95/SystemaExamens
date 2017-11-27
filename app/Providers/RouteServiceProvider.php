@@ -1,6 +1,6 @@
 <?php
 
-namespace Veterinaria\Providers;
+namespace EVA\Providers;
 
 use Illuminate\Routing\Router;
 use Illuminate\Foundation\Support\Providers\RouteServiceProvider as ServiceProvider;
@@ -14,7 +14,7 @@ class RouteServiceProvider extends ServiceProvider
      *
      * @var string
      */
-    protected $namespace = 'Veterinaria\Http\Controllers';
+    protected $namespace = 'EVA\Http\Controllers';
 
     /**
      * Define your route model bindings, pattern filters, etc.

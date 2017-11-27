@@ -1,6 +1,6 @@
 <?php
 
-namespace Veterinaria\Providers;
+namespace EVA\Providers;
 
 use Illuminate\Contracts\Auth\Access\Gate as GateContract;
 use Illuminate\Foundation\Support\Providers\AuthServiceProvider as ServiceProvider;
@@ -13,7 +13,7 @@ class AuthServiceProvider extends ServiceProvider
      * @var array
      */
     protected $policies = [
-        'Veterinaria\Model' => 'Veterinaria\Policies\ModelPolicy',
+        'EVA\Model' => 'EVA\Policies\ModelPolicy',
     ];
 
     /**

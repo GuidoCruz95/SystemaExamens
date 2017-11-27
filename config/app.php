@@ -143,10 +143,10 @@ return [
         /*
          * Application Service Providers...
          */
-        Veterinaria\Providers\AppServiceProvider::class,
-        Veterinaria\Providers\AuthServiceProvider::class,
-        Veterinaria\Providers\EventServiceProvider::class,
-        Veterinaria\Providers\RouteServiceProvider::class,
+        EVA\Providers\AppServiceProvider::class,
+        EVA\Providers\AuthServiceProvider::class,
+        EVA\Providers\EventServiceProvider::class,
+        EVA\Providers\RouteServiceProvider::class,
 
 
         // AdminLTE template provider

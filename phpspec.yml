@@ -1,5 +1,5 @@
 suites:
     main:
-        namespace: Veterinaria
-        psr4_prefix: Veterinaria
+        namespace: EVA
+        psr4_prefix: EVA
         src_path: app

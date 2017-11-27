@@ -1,6 +1,6 @@
 <?php
 
-namespace Veterinaria\models;
+namespace EVA\models;
 
 use Illuminate\Database\Eloquent\Model;
 
