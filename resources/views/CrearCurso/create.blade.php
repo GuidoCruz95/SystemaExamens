@@ -12,12 +12,11 @@
 
 
   <div class="box-header">
-    <div class="col-md-6 mb-3">
+    <div class="form-group col-md-2 mb-3">
     {!! Form::label('Nombre: ') !!}       
     {!! Form::text('nombre', null, ['class' => 'form-control', 'placeholder' => 'Nombre del curso']) !!}
     </div>
-
-    <div class="col-md-6 mb-3">
+    <div class="form-group col-md-2 mb-3">
        {!! Form::label('Contraseña: ') !!}       
     {!! Form::text('contraseña', null, ['class' => 'form-control','placeholder' => 'Contraseña del curso']) !!}
     </div>
@@ -35,15 +34,33 @@
   <label class = "box-title">Añadir Tipos De Evalación</label>
   </div>
     <div class="box-header">
-    <div class="col-md-6 mb-3">
+    <div class="col-md-2 mb-3">
   {!!Form::label('Evaluaciones')!!}
   {!!Form::select('evaluacion',['examen'=>'Examen','proyecot'=>'Proyecto'],null, ['class' => 'form-control', 'placeholder' => 'Seleccione Evaluacion'])!!} 
   </div>
-    <div class="col-md-6 mb-3">
-  {!!Form::label('Valor de evaluación')!!}
+    <div class="col-md-1 mb-3">
+      {!!Form::label('Nota')!!}
   {!!Form::text('nota', null, ['class' => 'form-control']) !!}
     </div>
-    </div>  
+</div>
+   <div class="box-header">
+     <div class="col-md-2 mb-3">
+  {!!Form::select('evaluacion',['examen'=>'Examen','proyecot'=>'Proyecto'],null, ['class' => 'form-control', 'placeholder' => 'Seleccione Evaluacion'])!!} 
+  </div>
+    <div class="col-md-1 mb-3">
+  {!!Form::text('nota', null, ['class' => 'form-control']) !!}
+    </div>
+  </div>
+
+   <div class="box-header">
+     <div class="col-md-2 mb-3">
+  {!!Form::select('evaluacion',['examen'=>'Examen','proyecot'=>'Proyecto'],null, ['class' => 'form-control', 'placeholder' => 'Seleccione Evaluacion'])!!} 
+  </div>
+    <div class="col-md-1 mb-3">
+  {!!Form::text('nota', null, ['class' => 'form-control']) !!}
+    </div>
+  </div>
+    
   </div>
 
   <div class="box-header">
