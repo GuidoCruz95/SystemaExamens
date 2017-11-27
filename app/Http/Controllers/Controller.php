@@ -1,6 +1,6 @@
 <?php
 
-namespace Veterinaria\Http\Controllers;
+namespace EVA\Http\Controllers;
 
 use Illuminate\Foundation\Bus\DispatchesJobs;
 use Illuminate\Routing\Controller as BaseController;

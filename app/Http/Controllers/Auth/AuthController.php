@@ -1,10 +1,10 @@
 <?php
 
-namespace Veterinaria\Http\Controllers\Auth;
+namespace EVA\Http\Controllers\Auth;
 
-use Veterinaria\User;
+use EVA\User;
 use Validator;
-use Veterinaria\Http\Controllers\Controller;
+use EVA\Http\Controllers\Controller;
 use Illuminate\Foundation\Auth\ThrottlesLogins;
 use Illuminate\Foundation\Auth\AuthenticatesAndRegistersUsers;
 

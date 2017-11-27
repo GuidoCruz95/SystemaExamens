@@ -1,6 +1,6 @@
 <?php
 
-namespace Veterinaria\Console\Commands;
+namespace EVA\Console\Commands;
 
 use Illuminate\Console\Command;
 use Illuminate\Foundation\Inspiring;

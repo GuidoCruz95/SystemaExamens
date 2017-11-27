@@ -1,6 +1,6 @@
 <?php
 
-namespace Veterinaria\Events;
+namespace EVA\Events;
 
 abstract class Event
 {

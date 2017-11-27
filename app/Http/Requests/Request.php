@@ -1,6 +1,6 @@
 <?php
 
-namespace Veterinaria\Http\Requests;
+namespace EVA\Http\Requests;
 
 use Illuminate\Foundation\Http\FormRequest;
 

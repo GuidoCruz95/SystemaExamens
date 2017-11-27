@@ -1,6 +1,6 @@
 <?php
 
-namespace Veterinaria\Jobs;
+namespace EVA\Jobs;
 
 use Illuminate\Bus\Queueable;
 

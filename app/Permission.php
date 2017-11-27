@@ -1,6 +1,6 @@
 <?php
 
-namespace Veterinaria;
+namespace EVA;
 
 use Illuminate\Database\Eloquent\Model;
 
@@ -23,7 +23,7 @@ class Permission extends Model
 
     public function roles()
     {
-        return $this->belongsToMany('Veterinaria\Role');
+        return $this->belongsToMany('EVA\Role');
     }
 
 }

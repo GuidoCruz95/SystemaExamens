@@ -1,6 +1,6 @@
 <?php
 
-namespace Veterinaria;
+namespace EVA;
 
 use Illuminate\Database\Eloquent\Model;
 use Zizaco\Entrust\EntrustRole;
@@ -24,13 +24,13 @@ class Role extends EntrustRole
 
     public function users()
     {
-        return $this->belongsToMany('Veterinaria\User', 'role_user');
+        return $this->belongsToMany('EVA\User', 'role_user');
     }
 
 
     public function permissions()
     {
-        return $this->belongsToMany('Veterinaria\Permission');
+        return $this->belongsToMany('EVA\Permission');
     }
 
 }

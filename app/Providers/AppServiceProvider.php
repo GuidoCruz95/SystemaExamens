@@ -1,6 +1,6 @@
 <?php
 
-namespace Veterinaria\Providers;
+namespace EVA\Providers;
 
 use Illuminate\Support\ServiceProvider;
 

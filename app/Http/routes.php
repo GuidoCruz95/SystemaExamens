@@ -21,3 +21,14 @@ Route::resource('admin/permissions', 'Admin\\PermissionsController');
 Route::resource('admin/roles', 'Admin\\RolesController');
 Route::resource('admin/users', 'Admin\\UsersController');
 
+Route::resource('CrearCurso', 'CrearCurso\\CrearCursoController');
+
+Route::resource('CrearEvaluacion', 'CrearEvaluacion\\CrearEvaluacionController');
+
+Route::resource('InscribirseCurso', 'InscribirseCurso\\InscribirseCursoController');
+
+Route::resource('VistaAlumno', 'VistaAlumno\\VistaAlumnoController');
+
+
+
+
